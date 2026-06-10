@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import CourseCard from "../components/CourseCard";
 import ComparisonTable from "../components/ComparisonTable";
 import EnrollModal from "../components/EnrollModal";
+import VideoSection from "../components/VideoSection";
 import { courses } from "../data/courses";
 
 export default function Home() {
@@ -71,6 +72,9 @@ export default function Home() {
           <div style={{ display: "flex", gap: "32px" }}>
             <a href="#courses" style={{ color: "#94a3b8", fontSize: "14px", fontWeight: 500, textDecoration: "none" }}>
               Courses
+            </a>
+            <a href="#preview" style={{ color: "#94a3b8", fontSize: "14px", fontWeight: 500, textDecoration: "none" }}>
+              Preview
             </a>
             <a href="#compare" style={{ color: "#94a3b8", fontSize: "14px", fontWeight: 500, textDecoration: "none" }}>
               Compare
@@ -255,6 +259,9 @@ export default function Home() {
           </div>
         </div>
       </header>
+      
+      {/* ── Video Preview ── */}
+      <VideoSection />
 
       {/* ── Course Cards ── */}
       <section
